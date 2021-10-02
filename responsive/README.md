@@ -4,7 +4,9 @@ Web is by default responsive. Whenever you find it isn't, it must be something y
 
 Reference: https://courses.kevinpowell.co/courses/conquering-responsive-layouts/
 
-# Day 1 - using percentages for widths and avoid defining heights
+## Day 1 - using percentages for widths and avoid defining heights
+
+### Takeaway
 
 - Percentages vs Fixed widths  
   Always use percentage than defining fixed widths to maintain responsiveness
@@ -14,14 +16,14 @@ Reference: https://courses.kevinpowell.co/courses/conquering-responsive-layouts/
 - The only issue with this is, at large screens, things can get too big.  
   That's why we can set `max-width` that can help us out!
 
-# Day 2 - Relative units
+## Day 2 - Relative units
 
-Reference
+### Reference
 
 - Em vs rem - https://youtu.be/_-aDOAMmDHI
 - Why you shouldn't set font-sizes using em - https://youtu.be/pautqDqa54I
 
-Takeaway
+### Takeaway
 
 - em takes reference to the parent component. Say A is B's parent component. We set 16px in A component, if we set font size to be 1.5 em in B component, the text will be a font size of 24px.
 - For font size, em works as said above. Yet for margin / padding, they take reference to the font size of the current component. Following up the above example, when you have "font-size: 1.5em", and set "margin: 1em", then the margin is 24px.
@@ -29,13 +31,13 @@ Takeaway
 - Rem should be used for font size as they always take reference to the root element / html instead of the parent component which could cause a lot of issues.
 - For padding / margin, if you prefer them to be responsive to the font size of the element, you can use em. For example, you set "margin: 1em". When you set a larger font size, say, from 1 rem to 1.5 rem, the respective margin / padding will also increase in size by 1.5
 
-# Day 3 & 4 - More on relative units and solutions to challenge 01
+## Day 3 & 4 - More on relative units and solutions to challenge 01
 
-Reference
+### Reference
 
 - vh, vw, vmin, vmax - https://youtu.be/IWFqGsXxJ1E
 
-Takeaway
+### Takeaway
 
 - vw is viewpoint width while vh is viewpoint height  
   e.g. 1vw means 1% of the viewpoint width
@@ -47,3 +49,18 @@ Takeaway
   following the above example, 10 vmax means 80px
 - Cautions when using viewpoint units
   Using them for font-size, and while cool, there are some accessibility issues with doing so, so I wouldn't suggest it unless it's just for a personal project of yours.
+
+## Day 5 - Challenge 03
+
+- Read through the challenge materials and prepare a solution yourself
+
+## Day 6
+
+### Reference
+
+- A Tale of `width` and `max-width` - https://css-tricks.com/tale-width-max-width/
+
+## Day 7 - Solution to challenge 03
+
+- This challenge contain advanced usage of css tooling in order to develop special layout and maintain responsiveness at the same time
+- During the development of layout, making use of `border: 2px solid red` would be a good idea to check whether you are on the right track
