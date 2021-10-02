@@ -11,6 +11,8 @@ Reference: https://courses.kevinpowell.co/courses/conquering-responsive-layouts/
 - Percentages on the child means the relative portion to parent component
 - Why it's a good idea to avoid heights  
   This is a general rule. There are times when you want to use height, but for the most part, they cause more issues than they solve. If you really need to use height, use `min-height` instead.
+- The only issue with this is, at large screens, things can get too big.  
+  That's why we can set `max-width` that can help us out!
 
 # Day 2 - Relative units
 
